@@ -40,11 +40,11 @@ if __name__ == "__main__":
     encrypted = aes.encrypt(b"Hello World, This is a secured message")
     decrypted = aes.decrypt(encrypted)
 
-    print("-------- Encrypted --------")
+    print("-------- AES - Encrypted --------")
 
     print(encrypted)
 
-    print("-------- Decrypted --------")
+    print("-------- AES - Decrypted --------")
 
     print(decrypted)
     
