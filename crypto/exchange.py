@@ -13,7 +13,7 @@ class Exchange:
         self.pub_key = self.priv_key.public_key()
 
     def prepare_pub(self):
-        return self.pub_key.public_bytes(Encoding.DER, PublicFormat.SubjectPublicKeyInfo)
+        return self.pub_key.public_bytes(Encoding.DER, PublicFormat.SubjectPublicKeyInfo)   
 
     def calc_shared(self, key):
         return self.priv_key.exchange(key)
